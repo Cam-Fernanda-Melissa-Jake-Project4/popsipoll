@@ -20,7 +20,6 @@ function CreatePoll(props) {
 
     const handleChange = (e) => {
         setFormFields({ ...formFields, [e.target.name]: e.target.value });
-
     }
 
     const handleChangeAnswers = (e) => {
@@ -32,7 +31,7 @@ function CreatePoll(props) {
             index = key;
         }
 
-        formFields.answers[index] = e.target.value;
+        formFields.answers[index].title = e.target.value;
 
         setFormFields(formFields);
     }

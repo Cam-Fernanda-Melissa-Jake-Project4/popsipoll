@@ -22,7 +22,7 @@ function App() {
   //   }
   // ]});
 
-  const [formFields, setFormFields] = useState({ title: '', question: '', answers: { option1: "", vote1: 0, option2: "", vote2:0 }});
+  const [formFields, setFormFields] = useState({ title: '', question: '', answers: { option1: {title: '', vote: 0}, option2: {title: '', vote: 0}}});
 
   return (
     <Router>
